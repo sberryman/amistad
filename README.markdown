@@ -1,5 +1,7 @@
 # amistad #
 
+forked becuase i had to. may not work  for you :(
+
 Amistad adds friendships management into a rails 3.0 application. it supports ActiveRecord 3.0.x and Mongoid 2.0.x.
 
 ## Installation ##
