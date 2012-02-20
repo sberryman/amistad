@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    amistad (0.7.5)
+    amistad (0.7.6)
 
 GEM
   remote: http://rubygems.org/
