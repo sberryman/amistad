@@ -12,14 +12,6 @@ module Amistad
           field :blocked_pending_friend_ids, :type => Array, :default => [], :accessible => true
           field :blocked_pending_inverse_friend_ids, :type => Array, :default => [], :accessible => true
           
-          %w(friend_ids inverse_friend_ids pending_friend_ids pending_inverse_friend_ids blocked_friend_ids blocked_inverse_friend_ids blocked_pending_friend_ids blocked_pending_inverse_friend_ids).each do |attribute|
-            define_method(attribute.to_sym) do
-              value = read_attribute(attribute)
-              write_attribute(attribute, value = []) if value.nil?
-              value
-            end
-          end
-          
           include InstanceMethods
         end
       end
